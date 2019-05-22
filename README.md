@@ -24,6 +24,10 @@ Helm must be installed >> https://helm.sh/docs/using_helm/#installing-helm
 
 Note >> All terminal command higlighted  in " " but ofcourse you must give commands without ""  (:
 
+#i forget to run minikube start command  (this is my mistake, im adding it know, but please be aware im adding after sendind repo link to your mail adresses)
+
+First of all start one k8 machine
+"minikube start"
 First of all lets init tiller;
 
 "helm init"       # initalize helm and tiller component
