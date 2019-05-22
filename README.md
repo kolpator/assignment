@@ -79,8 +79,11 @@ thankfully i included adminer app in php-fpm container;
 you can acces adminer via;
 http://192.168.99.100:31029/adminer.php
 user credentials;
+################
 user: postgres
+################
 password: passw0rd
+######################
 host: postgredb-postgresql
 
 after login import postgredb-postgresql.sql file to mylist database within postgresqlDatabase
