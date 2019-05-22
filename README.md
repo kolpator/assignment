@@ -75,8 +75,13 @@ http://192.168.99.100:31029/index.php
 
 Restore sample data to postgres;
 well its embrassing but i cant find a nice way to import sql data to postgres with cli tools; so this task should be done from your side;
+there is sql file in assignment/postgres  folder;
+########################
+postgredb-postgresql.sql
+########################
 thankfully i included adminer app in php-fpm container;
 you can acces adminer via;
+
 http://192.168.99.100:31029/adminer.php
 user credentials;
 ################
@@ -86,8 +91,8 @@ password: passw0rd
 ######################
 host: postgredb-postgresql
 
-after login import postgredb-postgresql.sql file to mylist database within postgresqlDatabase
+after login with adminer;    import postgredb-postgresql.sql file to   mylist database.
 
 after that step you can access to phpapp via;
 
-http://192.168.99.100:31029/index.php   #again you had to use your minikube servis ip   (minikube service list)
+http://192.168.99.100:31029/index.php   #again you had to use your minikube servise ip   ( minikube service list  > get nginx container)
