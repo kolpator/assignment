@@ -85,6 +85,6 @@ host: postgredb-postgresql
 
 after login import postgredb-postgresql.sql file to mylist database within postgresqlDatabase
 
-after that step you acces to phpapp via;
+after that step you can access to phpapp via;
 
-http://192.168.99.100:31029/index.php
+http://192.168.99.100:31029/index.php   #again you had to use your minikube servis ip   (minikube service list)
