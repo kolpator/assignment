@@ -1,4 +1,4 @@
-# Custom Dcoker file from official php-fpm with addon modules postgresql and redis
+# Custom Docker file from official php-fpm with addon modules postgresql and redis
 FROM php:7.1-fpm
 RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pgsql pdo pdo_pgsql && pecl install redis-4.0.1 \
     && docker-php-ext-enable redis
